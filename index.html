@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HR Insight Dashboard</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+<div class="app">
+
+  <div class="sidebar">
+    <div class="brand">
+      <div class="logo"></div>
+      <div class="brand-text">
+        <span class="brand-name">Nonsense Studio</span>
+        <span class="brand-email">hello@nonsense.studio</span>
+      </div>
+    </div>
+    <div class="search"><span class="search-text">Search</span><span class="search-key">⌘+K</span></div>
+    <ul class="menu">
+      <li class="menu-item"><a class="menu-link menu-link-active" href="#">Dashboard</a></li>
+      <li class="menu-item"><a class="menu-link" href="#">Employee Directory</a></li>
+      <li class="menu-item"><a class="menu-link" href="#">Attendance</a></li>
+      <li class="menu-item"><a class="menu-link" href="#">Employee Performance</a></li>
+      <li class="menu-item"><a class="menu-link" href="#">Leave Management</a></li>
+      <li class="menu-item"><a class="menu-link" href="#">Payroll</a></li>
+      <li class="menu-item"><a class="menu-link" href="#">Recruitment</a></li>
+      <li class="menu-item"><a class="menu-link" href="#">Onboarding</a></li>
+      <li class="menu-item"><a class="menu-link" href="#">Development</a></li>
+    </ul>
+    <ul class="bottom-menu">
+      <li class="bottom-item"><a class="menu-link" href="#">Help Center</a></li>
+      <li class="bottom-item"><a class="menu-link" href="#">Settings</a></li>
+      <li class="bottom-item"><a class="menu-link signout-link" href="#">Sign Out</a></li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="topbar">
+      <div class="breadcrumb">Dashboard / <span class="breadcrumb-current">Overview</span></div>
+      <div class="topbar-buttons">
+        <button class="btn">Invite People</button>
+        <button class="btn btn-purple">Generate Plan</button>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="title-row">
+        <div class="title-text">
+          <h1 class="page-title">HR Insight Dashboard</h1>
+          <p class="page-subtitle">Smart HR insights that drive better decisions</p>
+        </div>
+        <div class="title-buttons">
+          <button class="btn">Export Data</button>
+          <button class="btn btn-purple">+ New Entry</button>
+        </div>
+      </div>
+
+  
+      <div class="stats">
+        <div class="stat-card">
+          <div class="stat-top"><span class="stat-name">Total Employee</span><span class="dots">•••</span></div>
+          <div class="stat-bottom"><span class="stat-number">272</span><span class="stat-change">+6% <span class="stat-change-text">last month</span></span></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-top"><span class="stat-name">New Employee</span><span class="dots">•••</span></div>
+          <div class="stat-bottom"><span class="stat-number">72</span><span class="stat-change">+4% <span class="stat-change-text">last month</span></span></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-top"><span class="stat-name">Resign Employee</span><span class="dots">•••</span></div>
+          <div class="stat-bottom"><span class="stat-number">16</span><span class="stat-change">+2% <span class="stat-change-text">last month</span></span></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-top"><span class="stat-name">Job Applicants</span><span class="dots">•••</span></div>
+          <div class="stat-bottom"><span class="stat-number">329</span><span class="stat-change">+8% <span class="stat-change-text">last month</span></span></div>
+        </div>
+      </div>
+
+      
+      <div class="row">
+        <div class="card card-wide">
+          <div class="card-header"><span class="card-title">Team Performance</span><span class="dots">•••</span></div>
+          <div class="chart-top">
+            <div class="legend">
+              <span class="legend-item"><span class="dot-purple"></span>Project Team</span>
+              <span class="legend-item"><span class="dot-orange"></span>Product Team</span>
+            </div>
+            <div class="toggle">
+              <button class="toggle-btn">Monthly</button>
+              <button class="toggle-btn toggle-btn-on">Yearly</button>
+            </div>
+          </div>
+         
+          <svg class="chart-svg" viewBox="0 0 600 250" font-size="10" fill="#7a7a8c">
+            <g stroke="#f0f0f4">
+              <line x1="40" x2="590" y1="20" y2="20"/><line x1="40" x2="590" y1="65" y2="65"/>
+              <line x1="40" x2="590" y1="110" y2="110"/><line x1="40" x2="590" y1="155" y2="155"/>
+              <line x1="40" x2="590" y1="200" y2="200"/>
+            </g>
+            <g text-anchor="end">
+              <text x="32" y="24">50K</text><text x="32" y="69">40K</text><text x="32" y="114">30K</text>
+              <text x="32" y="159">20K</text><text x="32" y="204">10K</text>
+            </g>
+            <path d="M40 140 C80 120 100 150 130 120 S180 90 210 125 S260 125 290 100 S340 70 370 85 S420 65 450 90 S500 70 520 55 S570 45 590 30 L590 215 L40 215Z" fill="#6b3fe8" opacity="0.08"/>
+            <path d="M40 140 C80 120 100 150 130 120 S180 90 210 125 S260 125 290 100 S340 70 370 85 S420 65 450 90 S500 70 520 55 S570 45 590 30" fill="none" stroke="#6b3fe8" stroke-width="2"/>
+            <path d="M40 195 C80 180 100 205 130 185 S180 160 210 190 S260 195 290 160 S340 170 370 150 S420 140 450 185 S500 165 520 150 S570 130 590 110" fill="none" stroke="#f08a3c" stroke-width="2"/>
+            <line x1="402" x2="402" y1="20" y2="215" stroke="#9a9aab" stroke-dasharray="3 3"/>
+            <circle cx="402" cy="80" r="4" fill="#fff" stroke="#6b3fe8" stroke-width="2"/>
+            <circle cx="402" cy="142" r="4" fill="#fff" stroke="#f08a3c" stroke-width="2"/>
+            <rect x="270" y="70" width="112" height="56" rx="8" fill="#fff" stroke="#ebebf0"/>
+            <text x="282" y="88" fill="#1c1b29" font-weight="bold">Sep, 2025</text>
+            <circle cx="286" cy="102" r="3" fill="#6b3fe8"/><text x="294" y="105">Project Team</text><text x="366" y="105" fill="#1c1b29" font-weight="bold">38K</text>
+            <circle cx="286" cy="118" r="3" fill="#f08a3c"/><text x="294" y="121">Product Team</text><text x="366" y="121" fill="#1c1b29" font-weight="bold">24K</text>
+            <g text-anchor="middle">
+              <text x="40" y="238">Jan</text><text x="90" y="238">Feb</text><text x="140" y="238">Mar</text><text x="190" y="238">Apr</text>
+              <text x="240" y="238">May</text><text x="290" y="238">Jun</text><text x="340" y="238">Jul</text><text x="385" y="238">Aug</text>
+              <text x="420" y="238" fill="#1c1b29" font-weight="bold">Sep</text><text x="470" y="238">Oct</text><text x="520" y="238">Nov</text><text x="575" y="238">Dec</text>
+            </g>
+          </svg>
+        </div>
+
+        <div class="card card-small">
+          <div class="card-header"><span class="card-title">Attendance Report</span><span class="dots">•••</span></div>
+          <div class="heat-row"><span class="heat-time">11:00</span><div class="cell shade1"></div><div class="cell shade1"></div><div class="cell shade1"></div><div class="cell shade1"></div><div class="cell shade1"></div></div>
+          <div class="heat-row"><span class="heat-time">10:30</span><div class="cell shade1"></div><div class="cell shade1"></div><div class="cell shade1"></div><div class="cell shade1"></div><div class="cell shade1"></div></div>
+          <div class="heat-row"><span class="heat-time">10:00</span><div class="cell shade2"></div><div class="cell shade2"></div><div class="cell shade2"></div><div class="cell shade2"></div><div class="cell shade2"></div></div>
+          <div class="heat-row"><span class="heat-time">09:30</span><div class="cell shade3"></div><div class="cell shade4"></div><div class="cell shade3"></div><div class="cell shade4"></div><div class="cell shade3"></div></div>
+          <div class="heat-row"><span class="heat-time">09:00</span><div class="cell shade5"></div><div class="cell shade5"></div><div class="cell shade5"></div><div class="cell shade5"></div><div class="cell shade5"></div></div>
+          <div class="heat-row"><span class="heat-time">08:30</span><div class="cell shade6"></div><div class="cell shade6"></div><div class="cell shade6"></div><div class="cell shade6"></div><div class="cell shade6"></div></div>
+          <div class="heat-row"><span class="heat-space"></span><span class="heat-day">Mon</span><span class="heat-day">Tue</span><span class="heat-day">Wed</span><span class="heat-day">Thu</span><span class="heat-day">Fri</span></div>
+        </div>
+      </div>
+
+      
+      <div class="row">
+        <div class="card card-wide">
+          <div class="card-header"><span class="card-title">Employees</span><span class="dots">•••</span></div>
+          <div class="table-box">
+            <table class="table">
+              <tr class="table-head"><th class="th"><span class="checkbox"></span></th><th class="th">Employee ID</th><th class="th">Full Name</th><th class="th">Email</th><th class="th">Role</th><th class="th">Department</th><th class="th">Status</th></tr>
+              <tr class="table-row"><td class="td"><span class="checkbox"></span></td><td class="td">#FR01890</td><td class="td">Cooper Herwitz</td><td class="td">cooper@mail.com</td><td class="td">Jr. Developer</td><td class="td">IT</td><td class="td-status">Active</td></tr>
+              <tr class="table-row"><td class="td"><span class="checkbox"></span></td><td class="td">#FR01728</td><td class="td">Kierra Gouse</td><td class="td">kierra@mail.com</td><td class="td">UI Designer</td><td class="td">Creative</td><td class="td-status">Active</td></tr>
+              <tr class="table-row"><td class="td"><span class="checkbox"></span></td><td class="td">#FR01653</td><td class="td">Cheyenne Franci</td><td class="td">cheyennefci@mail.com</td><td class="td">Development</td><td class="td">HR</td><td class="td-status">Active</td></tr>
+              <tr class="table-row"><td class="td"><span class="checkbox"></span></td><td class="td">#FR01832</td><td class="td">Charlie Saris</td><td class="td">charliesar@mail.com</td><td class="td">Media Social</td><td class="td">Marketing</td><td class="td-status">Active</td></tr>
+              <tr class="table-row"><td class="td"><span class="checkbox"></span></td><td class="td">#FR01728</td><td class="td">Lindsey Mango</td><td class="td">lindsey@mail.com</td><td class="td">Product Designer</td><td class="td">Creative</td><td class="td-status">Active</td></tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="card card-small">
+          <div class="card-header"><span class="card-title">Jobs Overview</span><span class="dots">•••</span></div>
+          <div class="gauge">
+            <svg class="gauge-svg" viewBox="0 0 200 110" fill="none" stroke-width="22">
+              <path d="M16 100 A84 84 0 0 1 82 18" stroke="#6b3fe8"/>
+              <path d="M88 17 A84 84 0 0 1 150 38" stroke="#f08a3c"/>
+              <path d="M155 42 A84 84 0 0 1 184 100" stroke="#22a45d"/>
+            </svg>
+            <div class="gauge-text"><span class="gauge-number">72</span><span class="gauge-label">Total Jobs</span></div>
+          </div>
+          <ul class="jobs">
+            <li class="job-item"><span class="dot-purple"></span><span class="job-number">46</span><span class="job-label">Active Jobs</span></li>
+            <li class="job-item"><span class="dot-orange"></span><span class="job-number">18</span><span class="job-label">In Reviews Jobs</span></li>
+            <li class="job-item"><span class="dot-green"></span><span class="job-number">8</span><span class="job-label">Finish Jobs</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
